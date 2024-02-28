@@ -1,0 +1,370 @@
+/*******************************************************************/
+/* VARIABLES */
+/*******************************************************************/
+
+:root {
+  /* Colors */
+  --light-clr: #ece7e1;
+  --middle-clr: #a9a3a1;
+  /* --dark-clr: #574f4f; */
+  --dark-clr: red;
+
+  /* Font family */
+  --ff-headings: "Red Hat Display", "Quicksands";
+  --ff-bodytxt: Montserrat;
+
+  /* Space */
+  --section-spacing: 6rem;
+  --mellom-spacing: 3rem;
+}
+
+/* When classname is dark - the element is actually dark. So dark text on light background */
+
+/*******************************************************************/
+/* GLOBAL STYLING*/
+/*******************************************************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.lightmode-dark {
+  color: var(--dark-clr);
+}
+
+/* Headings */
+/* .main-heading {
+} */
+
+.sec-heading {
+  font-size: 48px;
+  font-family: var(--ff-headings);
+  font-weight: lighter;
+}
+
+.tert-heading {
+  font-size: 32px;
+  font-family: var(--ff-headings);
+  font-weight: lighter;
+}
+
+/* Bodytext */
+.txt {
+  font-family: var(--ff-bodytxt);
+}
+
+/* Main cta */
+.main-cta:link,
+.main-cta:visited {
+  background-color: var(--dark-clr);
+  text-decoration: none;
+  font-family: var(--ff-bodytxt);
+  color: white;
+}
+
+/* Secondary cta */
+.cta-secondary:link,
+.cta-secondary:visited {
+  color: var(--dark-clr);
+  font-family: var(--ff-bodytxt);
+  text-decoration: none;
+  border: 2px solid var(--dark-clr);
+  padding: 1rem;
+}
+
+/*******************************************************************/
+/* SPECIFIC STYLING */
+/*******************************************************************/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--light-clr);
+  display: flex;
+  flex-direction: column;
+}
+
+/*******************************************************************/
+/* HEADER */
+/*******************************************************************/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  font-family: mont;
+  background-color: var(--light-clr);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  height: 80px;
+}
+
+.logo {
+  color: var(--dark-clr);
+  text-decoration: none;
+  font-family: var(--ff-headings);
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-list a {
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-list a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: var(--dark-clr);
+  bottom: -3px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-list a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.nav-list li a:active {
+  color: var(--clr-orange_secondary);
+}
+
+.nav-list a:hover {
+  font-style: italic;
+}
+
+/*******************************************************************/
+/* HERO SECTION */
+/*******************************************************************/
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* height: calc(100vh - 80px); */
+  height: 100vh;
+}
+
+.hero-txt,
+.two-buttons {
+  margin-left: 3rem;
+}
+
+.hero-txt {
+  margin-bottom: var(--mellom-spacing);
+}
+
+h1 {
+  font-size: 48px;
+  font-family: var(--ff-headings);
+  font-weight: 300;
+}
+
+.intro-sec-heading {
+  font-size: 96px;
+  font-family: var(--ff-headings);
+  font-weight: 400;
+}
+
+.intro-txt {
+  font-family: var(--ff-bodytxt);
+  font-size: 24px;
+}
+
+/* HERO CTAs */
+
+.two-buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.projects-cta {
+  border-radius: 50px;
+  padding: 1rem 2rem;
+}
+
+.contact-cta {
+  border-radius: 50px;
+  padding: 1rem 2rem;
+}
+
+.projects-cta,
+.contact-cta {
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s,
+    transform 0.1s;
+}
+
+.projects-cta:hover,
+.contact-cta:hover {
+  background-color: var(--middle-clr);
+  border-color: var(--middle-clr);
+  color: var(--dark-clr);
+}
+
+.projects-cta:active,
+.contact-cta:active {
+  transform: scale(0.95);
+}
+
+/*******************************************************************/
+/* ABOUT SECTION */
+/*******************************************************************/
+
+.about-section {
+  /* min-height: calc(100vh - 80px); */
+  padding-bottom: 4rem;
+  margin-bottom: var(--section-spacing);
+}
+
+.about-wrapper {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.about-heading {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--ff-headings);
+  margin-bottom: var(--mellom-spacing);
+}
+
+.about-txt-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-family: var(--ff-bodytxt);
+  line-height: 1.5;
+
+  margin-bottom: var(--mellom-spacing);
+}
+
+.skill-icon-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 100%;
+  margin-bottom: var(--mellom-spacing);
+}
+
+.skill-icon {
+  font-size: 2rem;
+  fill: var(--dark-clr);
+
+  width: 8%;
+}
+
+.skill-txt-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skill-txt-list {
+  display: flex;
+  list-style: none;
+
+  font-family: var(--ff-bodytxt);
+  line-height: 1.5;
+}
+
+.skill-txt-list li {
+  padding: 1rem;
+  flex: 1;
+}
+
+.skill-txt-list li + li {
+  border-left: 2px solid var(--dark-clr);
+}
+
+/*******************************************************************/
+/* PROJECTS SECTION */
+/*******************************************************************/
+
+.projects-section {
+  /* background-color: cornflowerblue; */
+  /* height: calc(100vh - 80px); */
+  margin-bottom: 6rem;
+}
+
+.projects-wrapper {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.projects-heading {
+  /* text-align: center; */
+  font-family: var(--ff-headings);
+  margin-bottom: var(--mellom-spacing);
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--dark-clr);
+  border-radius: 2px;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card-project-classification {
+  font-family: var(--ff-bodytxt);
+  font-weight: 500;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.demo-link,
+.github-link {
+  display: flex;
+  gap: 0.5rem;
+  border: 2px solid var(--dark-clr);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  color: var(--dark-clr);
+}
+
+/*******************************************************************/
+/* CONTACT SECTION */
+/*******************************************************************/
