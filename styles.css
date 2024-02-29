@@ -4,21 +4,21 @@
 
 :root {
   /* Colors */
-  --light-clr: #ece7e1;
+  --primary-clr: #574f4f;
+  --secondary-clr: #ece7e1;
+
+  /* --middle-clr: #d7d1cf; */
   --middle-clr: #a9a3a1;
-  /* --dark-clr: #574f4f; */
-  --dark-clr: red;
 
   /* Font family */
-  --ff-headings: "Red Hat Display", "Quicksands";
-  --ff-bodytxt: Montserrat;
+  --ff-headings: "M Plus 1", "Red Hat Display", "Quicksands", sans-serif;
+  --ff-bodytxt: "Montserrat", "Poppins", sans-serif;
 
   /* Space */
   --section-spacing: 6rem;
   --mellom-spacing: 3rem;
+  --small-spacing: 1.5rem;
 }
-
-/* When classname is dark - the element is actually dark. So dark text on light background */
 
 /*******************************************************************/
 /* GLOBAL STYLING*/
@@ -29,14 +29,16 @@
   box-sizing: border-box;
 }
 
+.dark-mode {
+  --primary-clr: #ece7e1;
+  --secondary-clr: #574f4f;
+}
+
 .lightmode-dark {
-  color: var(--dark-clr);
+  color: var(--primary-clr);
 }
 
 /* Headings */
-/* .main-heading {
-} */
-
 .sec-heading {
   font-size: 48px;
   font-family: var(--ff-headings);
@@ -57,19 +59,20 @@
 /* Main cta */
 .main-cta:link,
 .main-cta:visited {
-  background-color: var(--dark-clr);
+  background-color: var(--primary-clr);
   text-decoration: none;
   font-family: var(--ff-bodytxt);
-  color: white;
+  color: var(--secondary-clr);
+  font-weight: 500;
 }
 
 /* Secondary cta */
 .cta-secondary:link,
 .cta-secondary:visited {
-  color: var(--dark-clr);
+  color: var(--primary-clr);
   font-family: var(--ff-bodytxt);
   text-decoration: none;
-  border: 2px solid var(--dark-clr);
+  border: 2px solid var(--primary-clr);
   padding: 1rem;
 }
 
@@ -82,7 +85,7 @@ html {
 }
 
 body {
-  background-color: var(--light-clr);
+  background-color: var(--secondary-clr);
   display: flex;
   flex-direction: column;
 }
@@ -98,7 +101,7 @@ header {
   width: 100%;
   z-index: 999;
   font-family: mont;
-  background-color: var(--light-clr);
+  background-color: var(--secondary-clr);
 }
 
 nav {
@@ -110,7 +113,7 @@ nav {
 }
 
 .logo {
-  color: var(--dark-clr);
+  color: var(--primary-clr);
   text-decoration: none;
   font-family: var(--ff-headings);
 }
@@ -133,7 +136,7 @@ nav {
   width: 100%;
   height: 2px;
   border-radius: 4px;
-  background-color: var(--dark-clr);
+  background-color: var(--primary-clr);
   bottom: -3px;
   left: 0;
   transform-origin: right;
@@ -152,6 +155,16 @@ nav {
 
 .nav-list a:hover {
   font-style: italic;
+}
+
+.darkmode-btn {
+  border: none;
+  background-color: transparent;
+}
+
+#theme-icon {
+  width: 30px;
+  cursor: pointer;
 }
 
 /*******************************************************************/
@@ -199,13 +212,9 @@ h1 {
   gap: 1.5rem;
 }
 
-.projects-cta {
-  border-radius: 50px;
-  padding: 1rem 2rem;
-}
-
+.projects-cta,
 .contact-cta {
-  border-radius: 50px;
+  border-radius: 4px;
   padding: 1rem 2rem;
 }
 
@@ -219,7 +228,8 @@ h1 {
 .contact-cta:hover {
   background-color: var(--middle-clr);
   border-color: var(--middle-clr);
-  color: var(--dark-clr);
+  /* color: var(--primary-clr); */
+  color: black;
 }
 
 .projects-cta:active,
@@ -269,7 +279,7 @@ h1 {
 
 .skill-icon {
   font-size: 2rem;
-  fill: var(--dark-clr);
+  fill: var(--primary-clr);
 
   width: 8%;
 }
@@ -294,7 +304,7 @@ h1 {
 }
 
 .skill-txt-list li + li {
-  border-left: 2px solid var(--dark-clr);
+  border-left: 2px solid var(--primary-clr);
 }
 
 /*******************************************************************/
@@ -302,7 +312,6 @@ h1 {
 /*******************************************************************/
 
 .projects-section {
-  /* background-color: cornflowerblue; */
   /* height: calc(100vh - 80px); */
   margin-bottom: 6rem;
 }
@@ -327,8 +336,8 @@ h1 {
   width: 30%;
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--dark-clr);
-  border-radius: 2px;
+  box-shadow: 0 0 6px rgb(181, 178, 178);
+  border-radius: 4px;
 }
 
 .card-img {
@@ -354,17 +363,172 @@ h1 {
   padding: 1rem;
 }
 
-.demo-link,
-.github-link {
+.demo-link:link,
+.demo-link:visited,
+.github-link:link,
+.github-link:visited {
   display: flex;
   gap: 0.5rem;
-  border: 2px solid var(--dark-clr);
+  border: 2px solid var(--primary-clr);
   padding: 0.5rem 1rem;
-  border-radius: 50px;
+  border-radius: 4px;
   text-decoration: none;
-  color: var(--dark-clr);
+  color: var(--primary-clr);
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s,
+    transform 0.1s;
+}
+
+.demo-link:hover,
+.github-link:hover {
+  background-color: var(--middle-clr);
+  border-color: var(--middle-clr);
+  /* color: var(--primary-clr); */
+  color: black;
+}
+
+.demo-link:active,
+.github-link:active {
+  transform: scale(0.95);
 }
 
 /*******************************************************************/
 /* CONTACT SECTION */
 /*******************************************************************/
+
+.contact-section {
+  margin-bottom: var(--section-spacing);
+}
+
+.contact-wrapper {
+  margin: 0 3rem;
+}
+
+.contact-heading {
+  margin-bottom: var(--mellom-spacing);
+}
+
+.form-txt-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+  gap: var(--small-spacing);
+}
+
+.name-container,
+.email-container,
+.message-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-family: var(--ff-headings);
+  color: var(--primary-clr);
+}
+
+form label {
+  padding-left: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  background-color: var(--middle-clr);
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  color: var(--primary-clr);
+  font-family: var(--ff-bodytxt);
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  border: 2px solid var(--primary-clr);
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #5e5959;
+  font-style: italic;
+}
+
+.submit-btn {
+  color: var(--secondary-clr);
+  font-weight: bolder;
+  font-family: var(--ff-bodytxt);
+  background-color: var(--primary-clr);
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.1s, color 0.3s, transform 0.1s;
+  padding: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: var(--middle-clr);
+  color: var(--primary-clr);
+}
+
+.submit-btn:active {
+  background-color: var(--secondary-clr);
+  color: var(--primary-clr);
+  transform: scale(0.95);
+}
+
+.contact-txt {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  font-family: var(--ff-bodytxt);
+  text-align: center;
+}
+
+.signature {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Babylonica";
+}
+
+/*******************************************************************/
+/* SOCIAL ICONS */
+/*******************************************************************/
+
+.social-icons-container {
+  position: fixed;
+  bottom: 3rem;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.social-icon {
+  margin-bottom: 1rem;
+  transition: color 0.2s ease;
+  font-size: 3rem;
+  width: 3rem;
+  height: 3rem;
+  z-index: 9999;
+}
+
+.social-icon:hover {
+  color: #989494;
+}
+
+/*******************************************************************/
+/* FOOTER */
+/*******************************************************************/
+
+footer {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-family: var(--ff-bodytxt);
+}
