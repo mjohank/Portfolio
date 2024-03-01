@@ -1,6 +1,6 @@
 # Portfolio
 
-[![Screenshot of my Portfolio landing page](https://github.com/Noroff-FEU-Assignments/project-exam-1-mjohank/blob/main/resources/Screenshot_Roasted-Reverie.jpg)](https://roasted-reverie.netlify.app/)
+[![Screenshot of my portfolio](https://github.com/mjohank/Portfolio/blob/main/resources/images/portfolio-screenshot.jpg)](https://rainydaysmj.netlify.app/)
 
 My Frontend Developer Portfolio
 
