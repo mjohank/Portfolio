@@ -1,6 +1,6 @@
 # Portfolio
 
-[![Screenshot of my Portfolio landing page](https://github.com/mjohank/Portfolio/blob/main/resources/images/portfolio-screenshot.jpg)
+[![Screenshot of my Portfolio landing page](https://github.com/mjohank/Portfolio/blob/main/resources/images/portfolio-screenshot.jpg)]
 
 My Frontend Developer Portfolio
 
