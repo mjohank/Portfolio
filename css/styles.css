@@ -47,9 +47,9 @@
 }
 
 .tert-heading {
-  font-size: 32px;
+  font-size: 24px;
   font-family: var(--ff-headings);
-  font-weight: lighter;
+  font-weight: 400;
 }
 
 /* Bodytext */
@@ -356,7 +356,7 @@ h1 {
 
 .card-project-classification {
   font-family: var(--ff-bodytxt);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .project-links {
