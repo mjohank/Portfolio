@@ -1,6 +1,6 @@
 # Portfolio
 
-[![Screenshot of my Portfolio landing page](https://github.com/mjohank/Portfolio/blob/main/resources/images/portfolio-screenshot.jpg)]
+[![Screenshot of my portfolio](https://github.com/mjohank/Portfolio/blob/main/resources/images/portfolio-screenshot.jpg)](https://rainydaysmj.netlify.app/)
 
 My Frontend Developer Portfolio
 
