@@ -64,9 +64,12 @@
     gap: 2rem;
   }
 
+  .skill-txt-list li {
+    border-top: 2px solid var(--primary-clr);
+  }
+
   .skill-txt-list li + li {
     border-left: none;
-    border-top: 2px solid var(--primary-clr);
   }
 
   /*******************************************************************/
