@@ -16,6 +16,7 @@
 
   /* Space */
   --section-spacing: 6rem;
+  --section-spacing-small: 4rem;
   --mellom-spacing: 3rem;
   --small-spacing: 1.5rem;
 }
@@ -372,10 +373,10 @@ h1 {
   display: flex;
   gap: 0.5rem;
   border: 2px solid var(--primary-clr);
-  padding: 0.5rem 1rem;
   border-radius: 4px;
-  text-decoration: none;
   color: var(--primary-clr);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
   transition: background-color 0.3s, border-color 0.3s, color 0.3s,
     transform 0.1s;
 }
@@ -487,18 +488,18 @@ form textarea::placeholder {
 }
 
 .contact-txt {
-  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 3rem;
   font-family: var(--ff-bodytxt);
   text-align: center;
+  width: 50%;
 }
 
 .signature {
-  text-align: center;
   font-size: 4rem;
   font-family: "Babylonica";
+  text-align: center;
 }
 
 /*******************************************************************/

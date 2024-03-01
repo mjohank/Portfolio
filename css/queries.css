@@ -81,6 +81,19 @@
     width: 100%;
   }
 
+  .project-links {
+    font-size: 0.9rem;
+  }
+
+  /*******************************************************************/
+  /* CONTACT SECTION */
+  /*******************************************************************/
+
+  .contact-section,
+  .about-section {
+    margin-bottom: var(--section-spacing-small);
+  }
+
   .form-txt-container {
     flex-direction: column;
     gap: 4rem;
@@ -95,9 +108,10 @@
   /*******************************************************************/
 
   .social-icons-container {
-    position: static;
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
+    position: static;
+    margin-bottom: var(--mellom-spacing);
   }
 }
