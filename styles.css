@@ -116,6 +116,10 @@ nav {
   width: 50px;
 }
 
+.st1 {
+  fill: red;
+}
+
 .nav-list {
   display: flex;
   flex-wrap: wrap;
