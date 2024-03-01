@@ -7,8 +7,8 @@
   --primary-clr: #574f4f;
   --secondary-clr: #ece7e1;
 
-  /* --middle-clr: #d7d1cf; */
   --middle-clr: #a9a3a1;
+  --lighter-clr: #d7d1cf;
 
   /* Font family */
   --ff-headings: "M Plus 1", "Red Hat Display", "Quicksands", sans-serif;
@@ -113,9 +113,7 @@ nav {
 }
 
 .logo {
-  color: var(--primary-clr);
-  text-decoration: none;
-  font-family: var(--ff-headings);
+  width: 50px;
 }
 
 .nav-list {
@@ -338,6 +336,7 @@ h1 {
   flex-direction: column;
   box-shadow: 0 0 6px rgb(181, 178, 178);
   border-radius: 4px;
+  /* background-color: var(--lighter-clr); */
 }
 
 .card-img {
@@ -439,8 +438,10 @@ form label {
 form input[type="text"],
 form input[type="email"],
 form textarea {
-  background-color: var(--middle-clr);
+  /* background-color: var(--middle-clr); */
+  background-color: var(--lighter-clr);
   border: none;
+  border-bottom: px solid var(--primary-clr);
   border-radius: 4px;
   padding: 10px;
   font-size: 16px;
@@ -503,7 +504,7 @@ form textarea::placeholder {
 
 .social-icons-container {
   position: fixed;
-  bottom: 3rem;
+  bottom: 0.5rem;
   right: 0;
   display: flex;
   flex-direction: column;
