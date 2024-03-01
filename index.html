@@ -332,16 +332,16 @@
         <h2 class="contact-heading sec-heading lightmode-dark">Let's talk</h2>
 
         <div class="form-txt-container">
-          <form action="#">
+          <form action="https://formspree.io/f/xoqgwrqn" method="POST">
 
             <div class="name-container">
               <label for="name">Name</label>
-              <input type="text" id="name" placeholder="Your name" />
+              <input type="text" id="name" name="name" placeholder="Your name" />
             </div>
 
             <div class="email-container">
               <label for="email">Email</label>
-              <input type="email" id="email" placeholder="Your email" />
+              <input type="email" id="email" name="email" placeholder="Your email" />
             </div>
 
             <div class="message-container">
@@ -349,7 +349,7 @@
               <textarea name="message" id="message" cols="30" rows="5" placeholder="Your message.."></textarea>
             </div>
 
-            <button class="submit-btn">SEND</button>
+            <button class="submit-btn" type="submit">SEND</button>
           </form>
 
           <div class="contact-txt">
