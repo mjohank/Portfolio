@@ -1,0 +1,103 @@
+/*******************************************************************/
+/* MEDIA QUERIES MEDIUM VIEWPORT */
+/*******************************************************************/
+
+@media only screen and (max-width: 1200px) {
+  /*******************************************************************/
+  /* PROJECTS SECTION */
+  /*******************************************************************/
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .card-img {
+    width: 50%;
+  }
+}
+
+/*******************************************************************/
+/* MEDIA QUERIES SMALL VIEWPORT */
+/*******************************************************************/
+
+@media only screen and (max-width: 830px) {
+  /*******************************************************************/
+  /* HEADER */
+  /*******************************************************************/
+
+  nav {
+    padding: 0 1rem;
+  }
+
+  .hero-txt,
+  .two-buttons,
+  .about-wrapper,
+  .projects-wrapper,
+  .contact-wrapper {
+    margin: 0 1rem;
+  }
+
+  /*******************************************************************/
+  /* HERO SECTION */
+  /*******************************************************************/
+
+  .intro-sec-heading {
+    margin-bottom: 1rem;
+  }
+
+  .intro-txt {
+    margin-bottom: 2rem;
+  }
+
+  /*******************************************************************/
+  /* ABOUT SECTION */
+  /*******************************************************************/
+
+  .skill-txt-list {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .skill-txt-list li + li {
+    border-left: none;
+    border-top: 2px solid var(--primary-clr);
+  }
+
+  /*******************************************************************/
+  /* PROJECTS SECTION */
+  /*******************************************************************/
+
+  .project-card {
+    flex-direction: column;
+  }
+
+  .card-img {
+    width: 100%;
+  }
+
+  .form-txt-container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  /*******************************************************************/
+  /* SOCIAL ICONS */
+  /*******************************************************************/
+
+  .social-icons-container {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
