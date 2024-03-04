@@ -26,7 +26,7 @@ The Portfolio gives an insight of who I am and what I do. It showcases some of m
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/Noroff-FEU-Assignments/project-exam-1-mjohank.git
+git clone https://github.com/mjohank/Portfolio.git
 ```
 
 2. Install the dependencies:
@@ -49,4 +49,4 @@ Email: [mjohandev@gmail.com](mailto:mjohandev@gmail.com)
 
 ## Link to live site:
 
-https://roasted-reverie.netlify.app/
+https://michaelknudsen.netlify.app/
