@@ -1,4 +1,4 @@
-// FUNCTION TO TOGGLE DARK MODE
+// FUNCTION TO TOGGLE DARK MODE ON/OFF
 
 const themeButton = document.getElementById("theme-btn");
 const themeIcon = document.getElementById("theme-icon");

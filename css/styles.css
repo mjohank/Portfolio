@@ -455,6 +455,20 @@ form textarea::placeholder {
   font-style: italic;
 }
 
+.form-feedback {
+  display: none;
+  font-size: 0.8rem;
+}
+
+.error {
+  color: orangered;
+}
+
+.success {
+  color: #24c224;
+  font-size: 1rem;
+}
+
 .submit-btn {
   color: var(--secondary-clr);
   font-weight: bolder;
