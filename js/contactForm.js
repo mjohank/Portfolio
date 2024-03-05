@@ -16,6 +16,7 @@ const submitButton = document.querySelector(".submit-btn");
 function validateContactForm(event) {
   event.preventDefault();
 
+  //Name lengthvalidation
   if (checkLength(nameInput.value, 2) === true) {
     nameFeedback.innerHTML = "";
     nameFeedback.innerHTML = '<i class="fa-solid fa-check success"></i>';
@@ -26,6 +27,7 @@ function validateContactForm(event) {
     nameFeedback.style.display = "inline-block";
   }
 
+  //Email format validation
   if (validateEmail(emailInput.value)) {
     emailFeedback.innerHTML = "";
     emailFeedback.innerHTML = '<i class="fa-solid fa-check success"></i>';
@@ -36,6 +38,7 @@ function validateContactForm(event) {
     emailFeedback.style.display = "inline-block";
   }
 
+  //Message length validation
   if (checkLength(messageInput.value, 19) === true) {
     messageFeedback.innerHTML = "";
     messageFeedback.innerHTML = '<i class="fa-solid fa-check success"></i>';
