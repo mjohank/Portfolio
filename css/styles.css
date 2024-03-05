@@ -439,7 +439,7 @@ form textarea {
   border-radius: 4px;
   font-family: var(--ff-bodytxt);
   font-size: 16px;
-  color: var(--primary-clr);
+  color: #574f4f;
   padding: 10px;
 }
 
