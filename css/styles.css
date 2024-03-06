@@ -109,7 +109,7 @@ header {
 }
 
 .logo {
-  padding-top: 2rem;
+  padding-top: 1rem;
   width: 50px;
   margin-left: 1rem;
 }
@@ -167,6 +167,10 @@ header {
   display: none;
 }
 
+.close-icon {
+  display: none;
+}
+
 .menu-checkbox {
   display: none;
 }
@@ -182,7 +186,7 @@ header {
 }
 
 #theme-icon {
-  width: 30px;
+  width: 25px;
   cursor: pointer;
 }
 
