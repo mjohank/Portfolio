@@ -1,24 +1,12 @@
 // FUNCTION TO TOGGLE DARK MODE ON/OFF
 
-// const themeButton = document.getElementById("theme-btn");
-// const themeIcon = document.getElementById("theme-icon");
-
-// themeButton.addEventListener("click", function () {
-//   document.body.classList.toggle("dark-mode");
-//   if (document.body.classList.contains("dark-mode")) {
-//     themeIcon.src = "resources/Icons/sun.png";
-//   } else {
-//     themeIcon.src = "resources/Icons/moon.png";
-//   }
-// });
-
 const themeButton = document.getElementById("theme-btn");
 const themeIcon = document.getElementById("theme-icon");
 
 // Check if the user has a preference stored in localStorage
 const isDarkMode = localStorage.getItem("darkMode") === "true";
 
-// Set the initial theme based on the user's preference
+// Set the theme based on the user's preference
 if (isDarkMode) {
   document.body.classList.add("dark-mode");
   themeIcon.src = "resources/Icons/sun.png";
