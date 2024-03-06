@@ -4,17 +4,14 @@ const navLinks = document.querySelectorAll(".nav-list .nav-link a");
 const openIcon = document.querySelector(".open-icon");
 const closeIcon = document.querySelector(".close-icon");
 
-//FUNCTION TO CLOSE MENU ON LINK CLICK
+// //FUNCTION TO CLOSE MENU ON LINK CLICK AND UPDATE ICONS
 
-function closeMenu() {
-  menuToggle.checked = false;
+function closeMenuAndUpdateIcons() {
+  menuToggle.checked = false; // Close the menu
+  toggleMenuIcons(); // Update icons based on the new state
 }
 
-navLinks.forEach((link) => {
-  link.addEventListener("click", closeMenu);
-});
-
-// FUNCTION TO TOGGLE MENU ICONS
+// FUNCtion TO TOGGLE MENU ICONS
 function toggleMenuIcons() {
   if (menuToggle.checked) {
     openIcon.style.display = "none";
@@ -25,7 +22,13 @@ function toggleMenuIcons() {
   }
 }
 
+// Update icon state according to menu visibility
 toggleMenuIcons();
 
-// Update icon on change
+// Update icon on checkbox state change
 menuToggle.addEventListener("change", toggleMenuIcons);
+
+// Attach the updated close function to nav links
+navLinks.forEach((link) => {
+  link.addEventListener("click", closeMenuAndUpdateIcons);
+});
