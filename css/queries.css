@@ -60,10 +60,6 @@
     display: block;
   }
 
-  header {
-    /* position: relative; */
-  }
-
   .nav-list {
     background-color: var(--secondary-clr);
     flex-direction: column;
@@ -80,7 +76,7 @@
     border-bottom: 1px solid var(--secondary-clr);
     font-size: 1.5rem;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1.1rem 0;
     width: 100%;
   }
 
