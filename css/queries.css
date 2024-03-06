@@ -125,11 +125,11 @@
 
   .skill-txt-list {
     flex-direction: column;
-    gap: 2rem;
   }
 
   .skill-txt-list li {
     border-top: 2px solid var(--primary-clr);
+    padding: 2rem 0;
   }
 
   .skill-txt-list li + li {
