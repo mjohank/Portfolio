@@ -376,6 +376,7 @@ h1 {
   flex-direction: column;
   box-shadow: 0 0 6px rgb(181, 178, 178);
   border-radius: 4px;
+  overflow: hidden;
 }
 
 .card-img {
