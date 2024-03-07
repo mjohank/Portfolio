@@ -1,6 +1,6 @@
 # Portfolio
 
-[![Screenshot of my portfolio](https://github.com/mjohank/Portfolio/blob/main/resources/images/portfolio-screenshot.jpg)](https://rainydaysmj.netlify.app/)
+[![Screenshot of my portfolio]([https://github.com/mjohank/Portfolio/blob/main/resources/images/portfolio-screenshot.jpg](https://github.com/mjohank/Portfolio/blob/main/resources/images/Portfolio-screenshot.jpg))](https://michaelknudsen.netlify.app/)
 
 My Frontend Developer Portfolio
 
