@@ -55,7 +55,7 @@ messageInput.addEventListener("blur", validateMessage);
 
 // FUNCTION TO HANDLE ALL VALIDATIONS
 function validateContactForm(event) {
-  event.preventDefault();
+  // event.preventDefault();
 
   // Calling validation functions
   validateName();
@@ -71,7 +71,6 @@ function validateContactForm(event) {
     submitButton.innerHTML = "Message sent";
     submitButton.style.color = "#24c224";
     submitButton.textContent = submitButton.textContent.toUpperCase();
-    contactForm.reset();
   }
 }
 
