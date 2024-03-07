@@ -1,11 +1,12 @@
 # Portfolio
 
-[![Screenshot of my portfolio](https://github.com/mjohank/Portfolio/blob/main/resources/images/portfolio-screenshot.jpg)](https://rainydaysmj.netlify.app/)
+[![Screenshot of my portfolio](https://github.com/mjohank/Portfolio/blob/main/resources/images/Portfolio-screenshot.jpg)](https://michaelknudsen.netlify.app/)
 
 My Frontend Developer Portfolio
 
 ## Description
 
+This Portfolio was a school assignment and marked the end of the first out of two years at Noroff School of Technology.
 The Portfolio gives an insight of who I am and what I do. It showcases some of my most recent work and provides information on how to contact me
 
 **The site consists of the following sections:**
