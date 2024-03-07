@@ -109,9 +109,8 @@
 
     <!-- Darkmode toggle -->
 
-    <div class="darkmode-switch" aria-label="toggle darkmode on-off">
-
-      <button class="darkmode-btn" id="theme-btn">
+    <div class="darkmode-switch-container">
+      <button class="darkmode-btn" id="theme-btn" aria-label="toggle dark mode on or off">
         <img src="resources/Icons/moon.png" alt="darkmode icon" id="theme-icon" aria-hidden="true">
       </button>
 
@@ -387,12 +386,12 @@
 
             <div class="name-container">
               <label for="name">Name* <span id="name-feedback" class="form-feedback"></span></label>
-              <input type="text" id="name" name="name" placeholder="Your name" />
+              <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" />
             </div>
 
             <div class="email-container">
               <label for="email">Email* <span id="email-feedback" class="form-feedback"></span></label>
-              <input type="email" id="email" name="email" placeholder="Your email" />
+              <input type="email" id="email" name="email" placeholder="Your email" autocomplete="email" />
             </div>
 
             <div class="message-container">
